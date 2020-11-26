@@ -20,9 +20,10 @@
         <span>Call me</span>
       </button>
     </div>
-    <div class="grid md:grid-cols-3 gap-5 px-5">
-      <div class="col-span-1 sm:mx-auto">
-        <img class="rounded-t-lg" src="/images/three.jpg" width="400">
+    <!-- image -->
+    <div class="grid md:grid-cols-3 gap-5 pr-5">
+      <div class="col-span-1">
+        <img src="/images/three.png" width="400">
       </div>
       <div class="md:mt-40 md:col-span-2 text-center">
         <div class="text-2xl md:text-4xl">Hi, My name is Muhammad Zangina.</div>

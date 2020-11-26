@@ -13,6 +13,9 @@
     <div class="">
       Frontend Developer <span>2018 till date</span>
     </div>
+    <div class="">
+
+    </div>
   </div>
 </div>
 
