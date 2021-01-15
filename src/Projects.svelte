@@ -6,8 +6,15 @@
       {name: "Lissafi", description: "Accounting software for small & medium businesses", link: "", isDev: false, stack: []},
       {name: "Tribal Books", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: []},
       {name: "Recharge Plus", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: []},
-      {name: "Usaifa", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: []},
-  ]
+      {name: "Usaifa", description: "A software for farming and productions stuff", link: "", isDev: true, stack: []},
+  ];
+  let modal = false;
+  let selectedProject = "";
+  const showStack = (project)=>{
+    modal = true;
+    selectedProject = project;
+    console.log(project)
+  }
 </script>
 
 <div class="bg-transparent sm:w-11/12 mx-auto mb-3 p-4">
@@ -16,7 +23,7 @@
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
     {#each projects as project}
-    <div class="border text-teal-900 shadow-2xl rounded-lg border-teal-900 p-4 hover:shadow-md hover:border-2 hover:bg-teal-900 hover:text-gray-300">
+    <div class="transition ease-linear duration-300 border text-teal-900 shadow-2xl rounded-lg border-teal-900 p-4 hover:shadow-md hover:border-2 hover:bg-teal-900 hover:text-gray-300">
         <div class="font-extrabold  text-center my-2 ">
           <span>{project.name}</span>
         </div>
@@ -25,13 +32,13 @@
         </div>
         <div class="flex justify-around my-3">
           {#if !project.isDev}
-            <button class=" hover:border-none rounded-full p-3 bg-teal-900 text-gray-300 hover:bg-white hover:text-teal-900 hover:font-black">View Site
+            <button class="transition ease-linear duration-300 outline-none hover:border-none rounded-full p-3 bg-teal-900 text-gray-300 hover:bg-white hover:text-teal-900 hover:font-black">View Site
               <svg class="inline-block ml-1 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
               </svg>
             </button>
           {/if}
-          <button class=" hover:border-none rounded-full p-3 bg-teal-900 text-gray-300 hover:bg-white hover:text-teal-900 hover:font-black">View Stack
+          <button class="transition ease-linear duration-300 outline-none hover:border-none rounded-full p-3 bg-teal-900 text-gray-300 hover:bg-white hover:text-teal-900 hover:font-black" on:click={()=>{showStack(project)}}>View Stack
             <svg class="inline-block ml-1 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -56,5 +63,7 @@
 
 
 <style media="screen">
-
+button:focus{
+  outline: none;
+}
 </style>
