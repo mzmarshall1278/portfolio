@@ -1,19 +1,22 @@
 <script>
+import AppModal from './Modal.svelte';
   let projects = [
-      {name: "Pipersoft", description: "Bookkeeping & Inventory management software", link: "", isDev: false, stack: []},
-      {name: "Haitracker", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: []},
-      {name: "Corpad", description: "Corporate savings and loan Merchant software", link: "", isDev: false, stack: []},
-      {name: "Lissafi", description: "Accounting software for small & medium businesses", link: "", isDev: false, stack: []},
-      {name: "Tribal Books", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: []},
-      {name: "Recharge Plus", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: []},
-      {name: "Usaifa", description: "A software for farming and productions stuff", link: "", isDev: true, stack: []},
+      {name: "Pipersoft", description: "Bookkeeping & Inventory management software", link: "", isDev: false, stack: ['Vue', 'Bootstrap', 'Python/Django', 'CouchDB/PouchDB']},
+      {name: "Haitracker", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue/Nuxt','Vuetify', 'Node/Express', 'MongoDB']},
+      {name: "Corpad", description: "Corporate savings and loan Merchant software", link: "", isDev: false, stack: ['Vue/Nuxt', 'Vuetify', 'Python/Django', 'MySQL']},
+      {name: "Lissafi", description: "Accounting software for small & medium businesses", link: "", isDev: false, stack: ['Vue', 'CoreUI','AntD', 'Node/Express', 'CouchDB/PouchDB']},
+      {name: "Tribal Books", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue/Nuxt', 'Bootstrap' ]},
+      {name: "Recharge Plus", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue', 'CoreUI', 'Django']},
+      {name: "Usaifa", description: "A software for farming and productions stuff", link: "", isDev: true, stack: ['Vue/Nuxt', 'Tailwind']},
   ];
   let modal = false;
   let selectedProject = "";
   const showStack = (project)=>{
-    modal = true;
     selectedProject = project;
-    console.log(project)
+    modal = true;
+  }
+  let closeModal = ()=> {
+    modal = false;
   }
 </script>
 
@@ -60,6 +63,9 @@
     {/each}
   </div>
 </div>
+{#if modal}
+  <AppModal project={selectedProject} show={modal} on:click={closeModal}/>
+{/if}
 
 
 <style media="screen">

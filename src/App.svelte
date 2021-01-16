@@ -4,6 +4,7 @@
 	import Stack from './Stack.svelte';
 	import Projects from './Projects.svelte';
 	import WorkHistory from './WorkHistory.svelte';
+	
 </script>
 
 <TailwindCss/>
