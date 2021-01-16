@@ -10,7 +10,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 inline-block mr-2">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
-        <span>Email me</span>
+        <span mailto="mzmarshall1278@gmail.com" >Email me</span>
       </button>
 
       <button class="transition ease-linear duration-300 mx-2 bg-transparent hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded inline-flex items-center">

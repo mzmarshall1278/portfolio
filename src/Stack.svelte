@@ -4,8 +4,8 @@
     {name: "Nuxt.js", image: "/images/nuxt.png"},
     {name: "Vuetify.js", image: "/images/vuetify.png"},
     {name: "Tailwindcss", image: "/images/tailwind.jpeg"},
-    //{name: "Bootstrap", image: "/images/bootstrap.png"},
-    //{name: "Typescript", image: "/images/typescript.png"},
+    {name: "Svelte", image: "/images/bootstrap.png"},
+    {name: "Sapper", image: "/images/typescript.png"},
     {name: "Express.js", image: "/images/express.png"},
     //{name: "Nest.js", image: "/images/nest.png"},
     {name: "Mongo DB", image: "/images/mongo.png"},
@@ -20,7 +20,7 @@
   </div>
   <div class="grid grid-cols-3 content-center lg:grid-cols-8  md:grid-cols-6 sm:grid-cols-4 gap-5">
     {#each stacks as stack (stack.name)}
-    <div class="card p-2 m-3 bg-transparent text-center rounded">
+    <div class="card p-2 m-3 bg-transparent mx-auto text-center rounded">
       <img src={stack.image} class="mx-auto h-12" alt="logo">
       <div class="text-gray-900 font-bold text-teal-900">
         {stack.name}
