@@ -18,7 +18,7 @@
 
 <div class="bg-transparent sm:w-11/12 mx-auto my-3 p-4">
   <div class="text-center text-xl font-black text-teal-900">
-    MY MAJOR STACK
+    MY STACK
   </div>
   <div class="grid grid-cols-3 content-center lg:grid-cols-8  md:grid-cols-6 sm:grid-cols-4 gap-5">
     {#each stacks as stack (stack.name)}

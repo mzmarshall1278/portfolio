@@ -22,7 +22,7 @@ import AppModal from './Modal.svelte';
 
 <div class="bg-transparent sm:w-11/12 mx-auto mb-3 p-4">
   <div class="text-center text-xl font-black mb-3 text-teal-900">
-    MY Projects
+    MY PROJECTS
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
     {#each projects as project}

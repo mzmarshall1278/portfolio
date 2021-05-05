@@ -1,7 +1,7 @@
 <script>
   
 export let project;
-export let show = false;
+export const show = false;
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
