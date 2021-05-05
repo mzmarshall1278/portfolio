@@ -1,11 +1,11 @@
 <script>
 import AppModal from './Modal.svelte';
   let projects = [
-      {name: "Pipersoft", description: "Bookkeeping & Inventory management software", link: "", isDev: false, stack: ['Vue', 'Bootstrap', 'Python/Django', 'CouchDB/PouchDB']},
+      {name: "Pipersoft", description: "Bookkeeping & Inventory management software", link: "https://piper.com.ng", isDev: false, stack: ['Vue', 'Bootstrap', 'Python/Django', 'CouchDB/PouchDB']},
       {name: "Haitracker", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue/Nuxt','Vuetify', 'Node/Express', 'MongoDB']},
-      {name: "Corpad", description: "Corporate savings and loan Merchant software", link: "", isDev: false, stack: ['Vue/Nuxt', 'Vuetify', 'Python/Django', 'MySQL']},
-      {name: "Lissafi", description: "Accounting software for small & medium businesses", link: "", isDev: false, stack: ['Vue', 'CoreUI','AntD', 'Node/Express', 'CouchDB/PouchDB']},
-      {name: "Tribal Books", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue/Nuxt', 'Bootstrap' ]},
+      {name: "Corpad", description: "Corporate savings and loan Merchant software", link: "", isDev: true, stack: ['Vue/Nuxt', 'Vuetify', 'Python/Django', 'MySQL']},
+      {name: "Lissafi", description: "Accounting software for small & medium businesses", link: "https://app.lissafi.com", isDev: false, stack: ['Vue', 'CoreUI','AntD', 'Node/Express', 'CouchDB/PouchDB']},
+      {name: "Tribal Books", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue/Nuxt', 'Bootstrap', 'Stripe' ]},
       {name: "Recharge Plus", description: "A light social Network for keeping track of friends location, time and description.", link: "", isDev: true, stack: ['Vue', 'CoreUI', 'Django']},
       {name: "Usaifa", description: "A software for farming and productions stuff", link: "", isDev: true, stack: ['Vue/Nuxt', 'Tailwind']},
   ];
@@ -35,11 +35,14 @@ import AppModal from './Modal.svelte';
         </div>
         <div class="flex justify-around my-3">
           {#if !project.isDev}
+          <a href={project.link} target="_blank">
             <button class="transition ease-linear duration-300 outline-none hover:border-none rounded-full p-3 bg-teal-900 text-gray-300 hover:bg-white hover:text-teal-900 hover:font-black">View Site
               <svg class="inline-block ml-1 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
               </svg>
             </button>
+          </a>
+            
           {/if}
           <button class="transition ease-linear duration-300 outline-none hover:border-none rounded-full p-3 bg-teal-900 text-gray-300 hover:bg-white hover:text-teal-900 hover:font-black" on:click={()=>{showStack(project)}}>View Stack
             <svg class="inline-block ml-1 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

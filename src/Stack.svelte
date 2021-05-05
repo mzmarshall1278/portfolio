@@ -2,15 +2,17 @@
   let stacks = [
     {name: "Vue.js", image: "/images/logo.png"},
     {name: "Nuxt.js", image: "/images/nuxt.png"},
+    {name: "Svelte.js", image: "/images/svelte.png"},
     {name: "Vuetify.js", image: "/images/vuetify.png"},
     {name: "Tailwindcss", image: "/images/tailwind.jpeg"},
-    {name: "Svelte", image: "/images/bootstrap.png"},
-    {name: "Sapper", image: "/images/typescript.png"},
+    {name: "Bootstrap", image: "/images/bootstrap.png"},
+    {name: "Typescript", image: "/images/typescript.png"},
+    {name: "Node.js ", image: "/images/node.png"},
     {name: "Express.js", image: "/images/express.png"},
-    //{name: "Nest.js", image: "/images/nest.png"},
     {name: "Mongo DB", image: "/images/mongo.png"},
     {name: "GraphQL", image: "/images/graphql.png"},
-    {name: "AWS", image: "/images/aws.png"}
+    {name: "AWS", image: "/images/aws.png"},
+    
   ]
 </script>
 
