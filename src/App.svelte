@@ -14,7 +14,7 @@
 <Projects />
 <WorkHistory />
 <Perks/>
-<footer class="bg-teal-900 text-white px-5 text-center">all rights reserved &copy; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with svelte</footer>
+<footer class="bg-teal-900 text-white px-5  py-2 text-center">All rights reserved &copy;</footer>
 <main>
 </main>
 

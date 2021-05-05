@@ -9,6 +9,7 @@
         <li>Attention To details</li>
         <li>Delivery on Time</li>
         <li>Performance and optimization skills</li>
+        <li>Fast problem detection</li>
     </ul>
   </div>
 </div>
