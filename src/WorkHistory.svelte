@@ -29,7 +29,7 @@
     <ul>
       {#each works as work}
         <li>
-          <div class=" bg-teal-800 py-4 px-8 mb-5 rounded-lg mx-auto">
+          <div class=" bg-teal-800 py-4 px-8 mb-5 rounded-lg mx-auto lg:w-3/5">
             <h4 class="text-xl font-black">{work.company}</h4>
             <h6 class="text-white">{work.role}, <span> {work.duration}</span></h6>
             <ul class="x-auto">
