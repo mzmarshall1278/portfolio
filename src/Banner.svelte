@@ -31,7 +31,7 @@
         and 2 years of working experience. I've worked remotely with agencies, and collaborated with talented people to create products for both business and customer use.
         <div class="my-6">
           <button class="transition ease-linear duration-300 text-teal-900 bg-white hover:bg-transparent hover:text-white font-bold py-2 px-4 rounded-full" >
-            <a style="text-decoration:none;" href="https://drive.google.com/file/d/1wzmL6fJubqFW1o4zKm2LiHEauTbKMSSX/view?usp=sharing" target="_blank">CHECKOUT MY RESUME</a>
+            <a style="text-decoration:none;" class="resume" href="https://drive.google.com/file/d/1wzmL6fJubqFW1o4zKm2LiHEauTbKMSSX/view?usp=sharing" target="_blank">CHECKOUT MY RESUME</a>
           </button>
         </div>
         </div>
@@ -41,5 +41,8 @@
   <style media="screen">
   button:focus{
     outline: none;
+  }
+  .resume:visited{
+    color: inherit
   }
   </style>
