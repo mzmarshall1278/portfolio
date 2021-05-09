@@ -26,7 +26,7 @@
         <img src="/images/three.png" width="400" alt="pic">
       </div>
       <div class="md:mt-40 md:col-span-2 text-center">
-        <div class="text-2xl md:text-4xl">Hi, My name is Muhammad Zangina.</div>
+        <div class="text-2xl md:text-4xl">Hi, My name is Muhammad Zangina (Marshall).</div>
         I am a self-taught and self-motivated web developer. I have over 5 years of self learning experience
         and 2 years of working experience. I've worked remotely with agencies, and collaborated with talented people to create products for both business and customer use.
         <div class="my-6">
